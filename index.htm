@@ -1,23 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="flex items-center justify-center h-screen bg-gradient-to-r from-purple-500 to-blue-500 text-white">
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>My Portfolio</title>  
+  <!-- Tailwind CSS CDN -->  
+  <script src="https://cdn.tailwindcss.com"></script>  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">  
+  <style>  
+    body {  
+      font-family: 'Roboto', sans-serif;  
+    }  
+  </style>  
+</head>  
 
-  <div class="text-center p-8 rounded-xl shadow-lg bg-white bg-opacity-10 backdrop-blur-md">
-    <!-- Profile Picture -->
-    <img src="./images/profilePix.jpg" alt="Profile Picture" class="w-40 h-40 mx-auto rounded-full border-4 border-white mb-6">
+<body class="bg-gradient-to-r from-purple-500 to-blue-500 text-white">  
 
-    <!-- Bio -->
-    <h1 class="text-3xl font-bold mb-2">Onyeizugbo Stanley Ifeanyi</h1>
-    <p class="text-lg mb-1">I'm learning Web Development and Backend Programming.</p>
-    <p class="text-lg">I enjoy building things, playing chess, and designing graphics.</p>
-  </div>
+  <!-- Navbar -->  
+  <nav class="fixed top-0 left-0 w-full px-5 py-3 bg-opacity-30 backdrop-blur-md z-10">  
+    <ul class="flex justify-center space-x-8">  
+      <li><a href="#about" class="hover:text-gray-300 transition duration-200">About</a></li>  
+      <li><a href="#skills" class="hover:text-gray-300 transition duration-200">Skills</a></li>  
+      <li><a href="#projects" class="hover:text-gray-300 transition duration-200">Projects</a></li>  
+      <li><a href="#contact" class="hover:text-gray-300 transition duration-200">Contact</a></li>  
+    </ul>  
+  </nav>  
+<br>
+  <br>
+  <div class="flex items-center justify-center h-screen">  
+    <div class="text-center p-8 rounded-xl shadow-lg bg-white bg-opacity-10 backdrop-blur-md hover:shadow-2xl transition-shadow duration-300">  
+      <!-- Profile Picture -->  
+      <img src="./images/profilePix.jpg" alt="Profile Picture" class="w-40 h-40 mx-auto rounded-full border-4 border-white mb-6 hover:scale-105 transform transition duration-300">  
 
-</body>
-</html>
+      <!-- Name -->  
+      <h1 class="text-3xl font-bold mb-4 shadow-md">Onyeizugbo Stanley Ifeanyi</h1>  
+      
+      <!-- Bio Cards -->  
+      <div class="flex justify-center space-x-4 mb-6">  
+        <!-- Card 1 -->  
+        <div class="bg-white text-black p-5 rounded-lg shadow-md max-w-xs">  
+          <h2 class="text-xl font-semibold mb-2">What I'm Learning</h2>  
+          <p class="text-lg">I'm learning Web Development and Backend Programming.</p>  
+        </div>  
+
+        <!-- Card 2 -->  
+        <div class="bg-white text-black p-5 rounded-lg shadow-md max-w-xs">  
+          <h2 class="text-xl font-semibold mb-2">My Hobbies</h2>  
+          <p class="text-lg">I enjoy building things, playing chess, swimming, and designing graphics.</p>  
+        </div>  
+      </div>  
+
+      <!-- Skills Section -->  
+      <h2 class="text-2xl font-semibold mb-4 text-white">Skills</h2>      
+      <ul class="list-disc list-inside text-left mb-4 text-white">  
+        <li>HTML & CSS</li>  
+        <li>JavaScript</li>  
+        <li>React</li>  
+        <li>Node.js</li>  
+      </ul>  
+
+      <!-- Social Media Links -->  
+      <div class="flex justify-center space-x-4">  
+        <a href="https://github.com/spojukwu" target="_blank" class="text-black hover:text-gray-700 transition duration-200">  
+          <img src="https://img.icons8.com/ios-filled/50/000000/github.png" class="w-8 h-8" alt="GitHub"/>  
+        </a>  
+        <a href="https://linkedin.com/in/Onyeizugbo-stanley-i" target="_blank" class="text-black hover:text-gray-700 transition duration-200">  
+          <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" class="w-8 h-8" alt="LinkedIn"/>  
+        </a>  
+        <a href="https://facebook.com/stanley.martins.i" target="_blank" class="text-black hover:text-gray-700 transition duration-200">  
+          <img src="https://img.icons8.com/ios-filled/50/000000/facebook.png" class="w-8 h-8" alt="Facebook"/>  
+        </a>  
+      </div>  
+    </div>  
+  </div>  
+
+</body>  
+</html>  
